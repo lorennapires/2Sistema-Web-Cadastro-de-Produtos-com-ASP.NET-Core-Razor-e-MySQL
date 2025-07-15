@@ -1,0 +1,12 @@
+﻿@page "{id:int}"
+@model ProdutoApp.Pages.Produtos.DetailsModel
+
+<h1>Detalhes do Produto</h1>
+
+<div>
+    <h4>@Model.Produto.Nome</h4>
+    <p>@Model.Produto.Descricao</p>
+    <p>Preço: @Model.Produto.Preco.ToString("C")</p>
+</div>
+
+<a asp-page="Index" class="btn btn-secondary">Voltar</a>
